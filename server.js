@@ -24,13 +24,37 @@ app.set("view engine", "ejs");
 
 
 // 4- routerlarni chaqiramiz
-app.get("/hello", function(req, res) {     // bu usulda sayt ishga tushganda /hello qo'yilmasa yozuv ko'rinmaydi
-    res.end(`<h1 style= "background: brown"> Hello World by Mukhammaddiyor.</h1>`);
+// app.get("/hello", function(req, res) {     // bu usulda sayt ishga tushganda /hello qo'yilmasa yozuv ko'rinmaydi
+//     res.end(`<h1 style= "background: brown"> Hello World by Mukhammaddiyor.</h1>`);
+// });
+
+// app.get("/gift", function(req, res) {
+//     res.end(`<h1 style= "color: magenta"> Siz sovg'alar bo'limidasiz.</h1>`);
+// });
+
+// app.get("/", function(req, res) {
+//     res.render('project');          // bu usulda, views ejs ni qayerdan izlashni tanishtirgan, ya'ni project nomi bilan yozilgan faylni izlaydi
+// });
+
+
+// Request qismlari:
+// header
+// body
+// 
+
+// req.body - bilan biz item ni qiymaitni oldik
+// req
+
+app.post("/create-item", (req, res) => {         // post - o'zi bilan malumot olib keladi hamda databasega malumotni yozadi
+    console.log(req.body);
+    res.json({test: "Succes"});   // bu json formatida malumotni qaytarish
 });
 
-app.get("/gift", function(req, res) {
-    res.end(`<h1 style= "color: magenta"> Siz sovg'alar bo'limidasiz.</h1>`);
+app.get("/", function(req, res) {  // get - bizga database dan malumot o'qish uchun kerak bo'ladi
+    res.render("harid")
 });
+
+
 
 const server = http.createServer(app);
 let PORT = 3000;
