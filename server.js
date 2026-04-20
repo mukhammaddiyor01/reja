@@ -18,6 +18,8 @@ app.use(express.urlencoded({extended: true})); // bu yozilmasa html kelgan forml
 // 2- Sessions
 
 // 3- backendda html yasab clientga yuboramiz bunga bizga ejs yordam beradi.
+// BBSR - backendda forntend yasaymiz clientga yuborish uchun. EJS dan foydalanamiz views folder uchun
+
 app.set("views", "views");  // viewsdan qiymat oladi
 app.set("view engine", "ejs");
 
@@ -47,12 +49,19 @@ app.set("view engine", "ejs");
 
 app.post("/create-item", (req, res) => {         // post - o'zi bilan malumot olib keladi hamda databasega malumotni yozadi
     console.log(req.body);
-    res.json({test: "Succes"});   // bu json formatida malumotni qaytarish
+    res.json({test: "Succes"});                 // bu json formatida malumotni qaytarish
 });
 
 app.get("/", function(req, res) {  // get - bizga database dan malumot o'qish uchun kerak bo'ladi
     res.render("harid")
 });
+
+// render() - bu ejs file ni, html ga aylantirib userga yuboradi
+// bu data bilan sahifa yasaydi
+// Bu degani:
+// 👉 views/harid.ejs faylni top
+// 👉 uni HTML ga aylantir
+// 👉 browserga yubor
 
 
 
