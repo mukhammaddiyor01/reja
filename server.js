@@ -2,6 +2,16 @@ console.log("Web Serverni Boshlash");
 const express = require("express");
 const app = express();   // bu usuld expres bizga app objectini jo'natar ekan
 const http = require("http"); // bu bizning core modelimiz ekan
+const fs = require("fs");
+
+let user;
+fs.readFile("database/user.json", "utf8", (err, data) => {
+    if(err) {
+        console.log("ERROR", err);
+    } else {
+        user = JSON.parse(data)
+    }
+});
 
 // App objectida 4ta bosqich bor
 // 1-Kirish code
@@ -53,6 +63,10 @@ app.post("/create-item", (req, res) => {         // post - o'zi bilan malumot ol
     res.json({test: "Succes"});                 // bu json formatida malumotni qaytarish
 });
 
+app.get("/author", (req, res) => {
+    res.render("author", { user: user });
+});
+
 app.get("/", function(req, res) {  // get - bizga database dan malumot o'qish uchun kerak bo'ladi
     res.render("harid")
 });
@@ -64,7 +78,7 @@ app.get("/", function(req, res) {  // get - bizga database dan malumot o'qish uc
 // 👉 uni HTML ga aylantir
 // 👉 browserga yubor
 
-
+// CRUD - Create Read Update Delete
 
 const server = http.createServer(app);
 let PORT = 3000;
