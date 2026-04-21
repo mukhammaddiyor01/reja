@@ -19,6 +19,7 @@ app.use(express.urlencoded({extended: true})); // bu yozilmasa html kelgan forml
 
 // 3- backendda html yasab clientga yuboramiz bunga bizga ejs yordam beradi.
 // BBSR - backendda forntend yasaymiz clientga yuborish uchun. EJS dan foydalanamiz views folder uchun
+// 2-usul Bu zamonaviy single page application usuli
 
 app.set("views", "views");  // viewsdan qiymat oladi
 app.set("view engine", "ejs");
