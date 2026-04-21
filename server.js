@@ -41,9 +41,9 @@ app.set("view engine", "ejs");
 
 
 // Request qismlari:
-// header
-// body
-// 
+// start line (1-start line, url qimsi)
+// header 
+// body 
 
 // req.body - bilan biz item ni qiymaitni oldik
 // req
