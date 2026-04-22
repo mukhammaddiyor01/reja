@@ -1,1 +1,231 @@
-<div>Hello World</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
+    
+</head>
+
+<body>
+    <!-- Asosiy Frame -->
+    <div class="frame">
+        <div class="main_frame">
+            <!-- Chap Frame -->
+            <div class="left_frame">
+                <div class="left_1">
+                    <div class="left_1_rasm">
+                        <img style="border-radius: 50%; object-fit: contain;" 
+                        src="images/o'zim.png" 
+                        width="156px" 
+                        height="142px" 
+                        alt="picture here?">
+                    </div>
+                    <div class="left_1_ism"><%=user.name%></div>
+                    <div class="left_1_job"><%=user.profession%></div>
+                    <!-- Buyerda chap frame, 1chi quti ichdidagi Iconlar yozilgan -->
+                    <div class="left_icons">
+                        <a href="link_href" href="https://instagram.com">
+                            <div class="icon">
+                                <img src="icon/Instagram.svg" class="icon-1" alt="Instagram icon">
+                            </div>
+                        </a>
+                 
+                        <a href="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Youtube.svg" class="icon-1"  alt="Youtube icon">
+                            </div>
+                        </a>
+                    
+                        <a href="link_href" href="https://twitter.com">
+                            <div class="icon">
+                                <img src="icon/Twitter.svg" class="icon-1" alt="Twitter icon">
+                            </div>
+                        </a>
+                    
+                        <a href="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Facebook.svg" class="icon-1" alt="Facebook icon">
+                            </div>
+                        </a>
+                   
+                        <a href="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Linkeding.svg" class="icon-1" alt="Linkeding icon">
+                            </div>
+                        </a>
+                    
+                        <a href="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Dribbble.svg" class="icon-1" alt="Dribbble icon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Bu marginer -->
+                <div class="marginer"></div>
+
+                <!-- Bu yerdan 2chi frame ichi boshlanadi -->
+                <div class="left_2">
+                    <div class="left_2_row">
+                        <div class="left_2_label">Age:</div>
+                        <div class="left_2_value"><%= user.age %></div>
+                    </div>
+
+                    <div class="left_2_row">
+                        <div class="left_2_label" style="width: 89px; height: 24px;">Residence:</div>
+                        <div class="left_2_value"><%= user.residence %></div>
+                    </div>
+
+                    <div class="left_2_row">
+                        <div class="left_2_label" style="width: 85px; height: 24px;">Freelance:</div>
+                        <div class="left_2_value">Available</div>
+                    </div>
+
+                    <div class="left_2_row">
+                        <div class="left_2_label" style="width: 75px; height: 24px;">Address:</div>
+                        <div class="left_2_value"><%= user.adress %></div>
+                    </div>
+                </div>
+
+                <!-- Bu yerdan 3frame ichiga kiriladi -->
+                <div class="marginer"></div>
+               <div class="left_3">
+                    <h3 class="lang">Languages</h3>
+
+                    <div class="row_top">
+                        <span><%= user.language[0] %></span>
+                        <span>100%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="fill" style="width: 100%"></div>
+                    </div>
+
+                    <div class="row_top">
+                        <span><%= user.language[1] %></span>
+                        <span>80%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="fill" style="width: 80%"></div>
+                    </div>
+
+                    <div class="row_top">
+                        <span><%= user.language[2] %></span>
+                        <span>60%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="fill" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                    
+
+                <div class="marginer"></div>
+
+                <!-- Bu yerdan chap 4frame ichiga kiriladi -->
+            <div class="left_4">
+                <h3 class="skills_title">Skills</h3>
+
+                <div class="skill_row">
+                    <div class="skill_top">
+                        <span><%= user.skills[0] %></span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill_bar">
+                        <div class="skill_fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill_row">
+                    <div class="skill_top">
+                        <span><%= user.skills[1] %></span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill_bar">
+                        <div class="skill_fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill_row">
+                    <div class="skill_top">
+                        <span><%= user.skills[2] %></span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill_bar">
+                        <div class="skill_fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill_row">
+                    <div class="skill_top">
+                        <span><%= user.skills[3] %></span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill_bar">
+                        <div class="skill_fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill_row">
+                    <div class="skill_top">
+                        <span><%= user.skills[4] %></span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill_bar">
+                        <div class="skill_fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Bu yerdan chap 5frame ichiga kiriladi -->
+
+                <div class="marginer"></div>
+                <div class="left_5">
+                    <h3 class="skills_title">Extra Skills</h3>
+                    <div class="left_5_row">
+                        <div class="left_5_label">
+                            <img src="icon/icons.svg " alt="icon?">
+                        </div>
+                        <div class="left_5_value"><%= user.extra_skills[0] %></div>
+                    </div>
+                    <div class="left_5_row">
+                        <div class="left_5_label">
+                            <img src="icon/icons.svg " class="s_icon" alt="icon?">
+                        </div>
+                        <div class="left_5_value"><%= user.extra_skills[1] %></div>
+                    </div>
+                    <div class="left_5_row">
+                        <div class="left_5_label">
+                            <img src="icon/icons.svg " alt="icon?">
+                        </div>
+                        <div class="left_5_value"><%= user.extra_skills[2] %></div>
+                    </div>
+                    <div class="left_5_row">
+                        <div class="left_5_label">
+                            <img src="icon/icons.svg " alt="icon?">
+                        </div>
+                        <div class="left_5_value"><%= user.extra_skills[3] %></div>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+            </div>
+            <div class="midd_frame">
+                <div class="midd_1">1</div>
+                <div class="midd_2">2</div>
+            </div>
+            <div class="right_frame">
+                <div class="right_1">1</div>
+                <div class="right_2">2</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

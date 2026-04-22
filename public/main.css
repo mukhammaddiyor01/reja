@@ -1,0 +1,404 @@
+/* Umumiy katta frame */
+
+.frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #e5e5e5;
+}
+
+/* Asosiy o'rtadagi katta frame */
+
+.frame .main_frame {
+    position: relative;
+    width: 1440px;
+    height: 1312px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
+    background-color: #d27449;
+}
+
+/* Asosiy chap frame */
+
+.main_frame .left_frame {
+    position: relative;
+    width: 305px;
+    height: 1315px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Asosiy o'rta frame */
+
+.main_frame .midd_frame {
+    position: relative;
+    width: 970px;
+    height: 1259px;
+    margin-left: 30px;
+    margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: blue;
+}
+
+/* Asosiy o'ng frame */
+
+.main_frame .right_frame {
+    position: relative;
+    width: 108px;
+    height: 1315px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: pink;
+}
+
+/* Asosiy chap taraf ichki framelar */
+
+.main_frame .left_1 {
+    position: relative;
+    width: 228px;
+    height: 253px;
+    margin-top: 10px;
+    margin-left: 37px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    /* background-color: #d27449; */
+}
+
+/* Chap taraf ichki 1-frame ichi */
+
+/* Rasm */
+
+.main_frame .left_1 .left_1_rasm {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 156.16px;
+    height: 135.05;
+    margin-bottom: 10px;
+}
+
+/* Ism */
+
+.main_frame .left_1 .left_1_ism {
+    position: relative;
+    width: 64px;
+    height: 20.85px;
+    margin-bottom: 10px;
+    /* H4 - 18px */
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    /* or 22px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    /* Black */
+    color: #2b2b2b;
+}
+
+/* Job */
+
+.main_frame .left_1 .left_1_job {
+    position: relative;
+    width: 180.84px;
+    height: 24.31px;
+    margin-bottom: 5px;
+    /* H4 - 18px */
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    /* Black */
+    color: #767676;
+}
+
+/* Iconlar */
+
+.main_frame .left_1 .left_icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 228px;
+    height: 22px;
+    margin-top: 12px;
+    
+}
+
+.link_href {
+    text-decoration: none;
+    color:  black;
+}
+
+.icon {
+    position: relative;
+    width: 24.99px;
+    height: 21.61px;
+    border-radius: 50%;
+    /* filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #ffb400; */
+}
+
+.icon-1 {
+    position: relative;
+    left: 29.17%;
+    right: 27.08%;
+    margin-top: 5.86px;
+}
+
+/* Chap taraf ichki 1-frame ichi tugadi*/
+
+/* Bu Marginer */
+
+.marginer {
+    position: relative;
+    width: 220px;
+    height: 0px;
+    margin-left: 40px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+
+    border: 1.5px solid #f0f0f6
+}
+
+/* ----------------------------------------------------- */
+
+/* Chap taraf ichki 2-frame ichi boshlandi*/
+
+/* Asosiy quti */
+
+.main_frame .left_frame .left_2 {
+    position: relative;
+    width: 221px;
+    height: 126px;
+    margin-top: 10px;
+    margin-left: 44px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.main_frame .left_frame .left_2 .left_2_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 24px;
+}
+
+.main_frame .left_frame .left_2 .left_2_label {
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    padding: 0 8px;
+    background-color: #ffb400;
+    color: #2b2b2b;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.main_frame .left_frame .left_2 .left_2_value {
+    margin-left: auto;
+    padding-left: 12px;
+    text-align: right;
+    color: #767676;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+
+
+/* Chap taraf ichki 2-frame ichi tugadi*/
+
+
+/* ----------------------------------------------------- */
+
+
+
+/* Chap taraf ichki 3-frame ichi boshlandi*/
+
+
+
+.main_frame .left_frame .left_3 {
+    position: relative;
+    width: 220px;
+    min-height: 153px;
+    margin-top: 10px;
+    margin-left: 44px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lang {
+    margin: 0 0 15px 0;
+    font-family: sans-serif;
+    font-weight: 700;
+    width: 95px;
+    height: 22px;
+    color: #2b2b2b;
+    text-align: left;
+}
+
+.row_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    font-family: sans-serif;
+    width: auto;
+    height: 24px;
+    color: #2b2b2b;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: #f0f0f6;
+    border-radius: 999px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background-color: #ffb400;
+    border-radius: 999px;
+}
+
+
+/* Chap taraf ichki 3-frame ichi tugadi*/
+
+
+/* ----------------------------------------------------- */
+
+/* Chap taraf ichki 4-frame ichi boshlandi*/
+
+.main_frame .left_frame .left_4 {
+    position: relative;
+    width: 220px;
+    min-height: 242px;
+    margin-top: 25px;
+    margin-left: 44px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills_title {
+    margin: 0 0 15px 0;
+    font-family: sans-serif;
+    font-weight: 700;
+    width: auto;
+    height: 22px;
+    color: #2b2b2b;
+    text-align: left;
+}
+
+.skill_row {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.skill_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #2b2b2b;
+}
+
+.skill_bar {
+    width: 100%;
+    height: 4px;
+    background-color: #f0f0f6;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.skill_fill {
+    height: 100%;
+    background-color: #ffb400;
+    border-radius: 999px;
+}
+
+
+/* Chap taraf ichki 4-frame ichi tugadi*/
+
+
+/* ----------------------------------------------------- */
+
+/* Chap taraf ichki 5-frame ichi boshlandi*/
+
+.main_frame .left_frame .left_5 {
+    position: relative;
+    width: 186px;
+    height: 148px;
+    /* margin-top: 10px; */
+    margin-left: 44px;
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 10px; */
+}
+
+.s_icon {
+    position: relative;
+    width: 15px;
+    height: 15px;
+}
+
+.main_frame .left_frame .left_5 .left_5_row {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: auto;
+    height: 24px;
+}
+
+.main_frame .left_frame .left_5 .left_5_label {
+    display: inline-flex;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    /* padding: 0 8px;
+    background-color: #ffb400; */
+    color: #2b2b2b;
+    font-family: sans-serif;
+    /* font-size: 15px; */
+}
+
+.main_frame .left_frame .left_5 .left_5_value {
+    /* margin-left: auto; */
+    /* padding-left: 12px; */
+    text-align: right;
+    color: #767676;
+    font-family: sans-serif;
+    width: auto;
+    height: 24;
+}
+/* Asosiy chap taraf framelar tugadi */

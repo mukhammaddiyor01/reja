@@ -15,6 +15,8 @@
     "bootstrap": "^5.3.8",
     "ejs": "^5.0.2",
     "express": "^5.2.1",
-    "nodemon": "^2.0.22"
+    "font-awesome": "^4.7.0",
+    "nodemon": "^2.0.22",
+    "sharp": "^0.34.5"
   }
 }
