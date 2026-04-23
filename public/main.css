@@ -20,7 +20,7 @@
     flex-direction: row;
     align-items: center;
     margin-top: 2px;
-    background-color: #d27449;
+    /* background-color: #d27449; */
 }
 
 /* Asosiy chap frame */
@@ -45,8 +45,268 @@
     display: flex;
     flex-direction: column;
 
-    background-color: blue;
+    background-color: #f0f0f6;
 }
+
+/* Asosiy o'rta frame birinchi qimsi */
+
+.main_frame .midd_frame .midd_1 {
+    position: relative;
+    width: 100%;
+    height: 454.33px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 100px;
+    overflow: hidden;
+
+    background-color: #ffffff;
+}
+
+
+.main_frame .midd_frame .midd_1 .midd_1left {
+    position: relative;
+    width: 500px;
+    height: 330px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.main_frame .midd_frame .midd_1 .midd_1left .midd_1_1 {
+    position: relative;
+    width: 499.51px;
+    min-height: 116.72px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #2b2b2b;
+}
+
+.main_frame .midd_frame .midd_1 .midd_1left .midd_1_2 {
+    position: relative;
+    width: 424.44px;
+    max-height: 85.6px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 24px;
+    line-height: 36px; */
+    text-transform: capitalize;
+    color: #767676;
+}
+
+.main_frame .midd_frame .midd_1 .midd_1left .midd_1_3 {
+    position: relative;
+    width: 154.16px;
+    height: 49.61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 7px;
+    background-color: #ffb400;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    /* font-size: 26px; */
+    line-height: 1;
+    text-transform: uppercase;
+    color: #2b2b2b;
+}
+
+
+/* Ongdagi rasm */
+
+.main_frame .midd_frame .midd_1 .midd_1right {
+    position: relative;
+    width: 326.06px;
+    height: 446.55px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    background-color: transparent;
+}
+
+.main_frame .midd_frame .midd_1 .midd_1right img {
+    width: 326.06px;
+    height: 446.55px;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+/* Ikkinchi frame boshlanishi */
+
+.main_frame .midd_frame .midd_2 {
+    position: relative;
+    width: 970px;
+    height: 653px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 140px;
+    overflow: hidden;
+
+    /* background-color: #be6262; */
+}
+
+.main_frame .midd_frame .midd_2 .my_serv {
+    position: relative;
+    width: 193px;
+    height: 40px;
+    flex-shrink: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2b2b2b;
+}
+
+.main_frame .midd_frame .midd_2 .post_my_serv {
+    position: relative;
+    width: 438px;
+    height: 68px;
+    flex-shrink: 0;
+    margin: 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    color: #767676;
+}
+
+
+/* Bu yerdan 6ta servis turlari */
+
+.main_frame .midd_frame .midd_2 .serv_cards {
+    position: relative;
+    width: 970px;
+    height: 470px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    row-gap: 20px;
+    margin-top: 35px;
+}
+
+.main_frame .midd_frame .midd_2 .serv_card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 225px;
+    flex: 0 0 310px;
+    box-sizing: border-box;
+    padding: 28px 25px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.icon_razmer {
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+    margin-bottom: 26px;
+}
+
+.midd_2_serv_names {
+    position: relative;
+    width: 100%;
+    min-height: 22px;
+    margin: 0 0 10px;
+    /* H4 - 18px */
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    /* or 22px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    text-transform: capitalize;
+    /* Black */
+    color: #2b2b2b;
+}
+
+.post_midd_2_serv_names {
+    position: relative;
+    width: 100%;
+    min-height: 24px;
+    margin: 0;
+    /* H4 - 18px */
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    text-transform: capitalize;
+    /* Black */
+    color: #767676;
+}
+
+.midd_2_butt {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    margin-top: 10px;
+    padding: 0 8px;
+    border: none;
+    color: #ffb400;
+    /* color: #2b2b2b; */
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+/* Asosiy o'rtadagilar tugadi */
+
+/* --------------------------------------- */
+
 
 /* Asosiy o'ng frame */
 
@@ -60,6 +320,59 @@
 
     background-color: pink;
 }
+
+.main_frame .right_frame .right_1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 108px;
+    height: 40px;
+    margin-top: 50px;
+}
+
+.main_frame .right_frame .right_2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 65px;
+    height: 493px;
+    margin-top: 174px;
+}
+
+.main_frame .right_frame .right_icons {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.main_frame .right_frame .right_icons a,
+.main_frame .right_frame .right_icons .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.main_frame .right_frame .right_icons img,
+.main_frame .right_frame .right_1 img {
+    position: static;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    object-fit: contain;
+}
+/* Asosiy o'ngdagilar tugadi */
+
+/* --------------------------------------- */
+
 
 /* Asosiy chap taraf ichki framelar */
 
@@ -116,7 +429,7 @@
 
 .main_frame .left_1 .left_1_job {
     position: relative;
-    width: 180.84px;
+    width: 200.84px;
     height: 24.31px;
     margin-bottom: 5px;
     /* H4 - 18px */

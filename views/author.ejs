@@ -108,7 +108,7 @@
                     </div>
 
                     <div class="row_top">
-                        <span><%= user.language[1] %></span>
+                        <span><%= user.language[2] %></span>
                         <span>80%</span>
                     </div>
                     <div class="bar">
@@ -116,7 +116,7 @@
                     </div>
 
                     <div class="row_top">
-                        <span><%= user.language[2] %></span>
+                        <span><%= user.language[1] %></span>
                         <span>60%</span>
                     </div>
                     <div class="bar">
@@ -216,13 +216,107 @@
                 </div>
                 <div class="marginer"></div>
             </div>
+
+            <!-- Bu yerdan o'rta asosiy frame -->
             <div class="midd_frame">
-                <div class="midd_1">1</div>
-                <div class="midd_2">2</div>
+                <div class="midd_1">
+                    <div class="midd_1left">
+                        <div class="midd_1_1"><%= user.work_place %></div>
+                        <div class="midd_1_2"><%= user.service_desc %></div>
+                        <div class="midd_1_3">
+                            <img src="btn_icon/hereme.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="midd_1right">
+                        <img src="images/fullbody.png" alt="image here?">
+                    </div>
+                </div>
+                <div class="midd_2">
+                    <h3 class="my_serv">My Services</h3>
+                    <p class="post_my_serv"><%= user.service_desc %></p>
+                    <div class="serv_cards">
+                    <div class="serv_card">
+                        <img class="icon_razmer" src="box_images/coding.svg" alt="web developing">
+                        <h4 class="midd_2_serv_names">Web Development</h4>
+                        <p class="post_midd_2_serv_names">Blog, e-Commerce</p>
+                    </div>
+                    <div class="serv_card">
+                        <img class="icon_razmer" src="box_images/illustration.svg" alt="illustration">
+                        <h4 class="midd_2_serv_names">UI/UX Design</h4>
+                        <p class="post_midd_2_serv_names">Mobile App</p>
+                    </div>
+                    <div class="serv_card">
+                        <img class="icon_razmer" src="box_images/Microphone.svg" alt="Microphone">
+                        <h4 class="midd_2_serv_names">Sound Design</h4>
+                        <p class="post_midd_2_serv_names">Voice Over, Beat Making</p>
+                    </div>
+                    <div class="serv_card">
+                        <img class="icon_razmer" src="box_images/game-development.svg" alt="game-development">
+                        <h4 class="midd_2_serv_names">Game Design</h4>
+                        <p class="post_midd_2_serv_names">Character Design</p>
+                    </div>
+                    <div class="serv_card">
+                        <img class="icon_razmer" src="box_images/Photographer.svg" alt="Photograper">
+                        <h4 class="midd_2_serv_names">Photography</h4>
+                        <p class="post_midd_2_serv_names">Portrait</p>
+                    </div>
+                    <div class="serv_card">
+                        <h4 class="midd_2_ad midd_2_serv_names" >Advertising</h4>
+                        <p class="post_midd_2_ad post_midd_2_serv_names"><%= user.service_desc %></p>
+                        <button class="midd_2_butt">Order Now ></button>
+                    </div>
+                </div>
+
+                </div>
             </div>
             <div class="right_frame">
-                <div class="right_1">1</div>
-                <div class="right_2">2</div>
+                <div class="right_1">
+                    <img src="icon/Contrast.svg" alt="icon?">
+                </div>
+                <div class="right_2">
+                    <div class="right_icons">
+                        <a href="link_href" href="">
+                            <div class="icon">
+                                <img src="right_icons/Home.svg" class="icon-1" alt="Instagram icon">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="right_icons">
+                        <a href="link_href" href="">
+                            <div class="icon">
+                                <img src="right_icons/Service.svg" class="icon-1" alt="Instagram icon">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="right_icons">
+                        <a href="link_href" href="https://instagram.com">
+                            <div class="icon">
+                                <img src="right_icons/Cv.svg" class="icon-1" alt="Instagram icon">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="right_icons">
+                        <a href="link_href" href="https://instagram.com">
+                            <div class="icon">
+                                <img src="right_icons/Portfolio.svg" class="icon-1" alt="Instagram icon">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="right_icons">
+                        <a href="link_href" href="https://instagram.com">
+                            <div class="icon">
+                                <img src="right_icons/Blog.svg" class="icon-1" alt="Instagram icon">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="right_icons">
+                        <a href="link_href" href="https://instagram.com">
+                            <div class="icon">
+                                <img src="right_icons/Contact.svg" class="icon-1" alt="Instagram icon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
