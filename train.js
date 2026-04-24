@@ -1,3 +1,20 @@
+// MITASK-A
+
+function countLetter(a, b) {
+  let count = 0;
+  for (let i = 0; i < b.length; i++) {
+    if (b[i] == a) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countLetter("e", "engineer"));
+
+
+
+
 // 21 - Darsimiz Rejasi
 // 1) NodeJS - single thread hamda Multi Process dasturlsh
 // 2) Asynchrnous dasturlash: Callback functionlar
@@ -177,30 +194,30 @@
 // run();
 
 
-// CALLBACK / SETINTERVAL
+// // CALLBACK / SETINTERVAL
 
-function maslahatBering (a, callback) { 
-    if(typeof a !== 'number') callback("insert a number from 0 to 5" , null); 
-    else if(a < 20) callback(null, list[0]); 
-    else if(a > 20 && a <= 30) callback(null, list[1]);
-    else if(a > 30 && a <= 40) callback(null, list[2]);
-    else if(a > 40 && a <= 50) callback(null, list[3]);
-    else if(a > 50 && a <= 60) callback(null, list[4]);
-    else {
-        setInterval(() => {         // bunda setinterval yaxshi ishlayverar ekan
-            callback(null, list[5]);
-        }, 5000);
-    }
-}
+// function maslahatBering (a, callback) { 
+//     if(typeof a !== 'number') callback("insert a number from 0 to 5" , null); 
+//     else if(a < 20) callback(null, list[0]); 
+//     else if(a > 20 && a <= 30) callback(null, list[1]);
+//     else if(a > 30 && a <= 40) callback(null, list[2]);
+//     else if(a > 40 && a <= 50) callback(null, list[3]);
+//     else if(a > 50 && a <= 60) callback(null, list[4]);
+//     else {
+//         setInterval(() => {         // bunda setinterval yaxshi ishlayverar ekan
+//             callback(null, list[5]);
+//         }, 5000);
+//     }
+// }
 
-console.log("[passed here 0");
-maslahatBering(65, (err, data) => { 
-    if(err) console.log('ERROR:', err);
-     else {console.log('javob:', data);
-     }
-});
+// console.log("[passed here 0");
+// maslahatBering(65, (err, data) => { 
+//     if(err) console.log('ERROR:', err);
+//      else {console.log('javob:', data);
+//      }
+// });
 
-console.log("[passed here 0");
+// console.log("[passed here 0");
 
 
 
