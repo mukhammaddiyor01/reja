@@ -1,10 +1,10 @@
 // MITASK-B
-const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,];
+const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function countDigits(a) {
   let count = 0;
   for (let i = 0; i < a.length; i++) {
-    if (num.includes(Number(a[i])) ) {
+    if (num.includes(Number(a[i]))) {
       count++;
     }
   }
@@ -12,7 +12,6 @@ function countDigits(a) {
 }
 
 console.log(countDigits("ad2a54y79wet0sfgb9"));
-
 
 // // MITASK-A
 
@@ -27,9 +26,6 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 // }
 
 // console.log(countLetter("e", "engineer"));
-
-
-
 
 // 21 - Darsimiz Rejasi
 // 1) NodeJS - single thread hamda Multi Process dasturlsh
@@ -61,7 +57,6 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 //     }
 // }
 
-
 // console.log("[passed here 0");
 // maslahatBering(65, (err, data) => { // mana shu callback functionni chaqririshimizda, callbackning parametri sifatida funtion ishga tushadi
 //     if(err) console.log('ERROR:', err);
@@ -71,7 +66,6 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 
 // console.log("[passed here 0");
 
-
 // TERMINALDA CHIQQAN JAVOB
 // [nodemon] starting `node train.js`
 // Jack Ma maslahatlari
@@ -80,9 +74,6 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 // javob: endi damizni oling, foydasi yo'q endi!
 
 // 21-DARS TUGADI
-
-
-
 
 // 22-DARS. ASYNCHRONOUS DASTURLASH - ASYNCHONOUS VA PROMISE
 // Darsimiz rejasi
@@ -108,7 +99,7 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 // async function maslahatBering (a) {   // asynchronous yasash uchun biz functionni :-> 'async function' ko'rinishida define qilamiz
 //     if(typeof a !== 'number') throw new Error("insert a number from 0 to 5" , null); // agar bizga error kerak bo'lsa 'throw' qilishimiz kerak.
 //     else if(a <= 20) return list[0]; // javiob kelayotgan payt biz faqat javobni return qilamiz
-    
+
 //     else if(a > 20 && a <= 30) return list[1];
 //     else if(a > 30 && a <= 40) return list[2];
 //     else if(a > 40 && a <= 50) return list[3];
@@ -120,16 +111,14 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 //     }
 // }
 
-
 // // then/catch
 // console.log("[passed here 0");
 // maslahatBering(25).then(data => {       // .then() - data catch qiladi.  catch() - catch esa error catch qiladi
 //     console.log("Javob:", data);
 // }).catch(err => {
 //     console.log("Error:", err);
-// }); 
+// });
 // console.log("passed here 1");
-
 
 // BU - NOQULAY USUL EKAN. 25dan keyin 40 ni so'rash
 // console.log("[passed here 0");
@@ -138,14 +127,13 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 //     console.log("Javob:", data);
 // }).catch(err => {
 //     console.log("Error:", err);
-// }); 
+// });
 // console.log("passed here 1");
 //     console.log("Javob:", data);
 // }).catch(err => {
 //     console.log("Error:", err);
-// }); 
+// });
 // console.log("passed here 1");
-
 
 // // async/await
 // async function run() {
@@ -158,8 +146,6 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 // }
 // run();
 
-
-
 // NATIJA:
 // [nodemon] starting `node train.js`
 // Jack Ma maslahatlari
@@ -168,9 +154,6 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 // Javob: to'g'ri boshliq tanlang va ko'proq xato qiling!
 
 // bunga sabab, asynchronous funtion, synchronous functionlar to'liq ishga tushib bo'lgach, ichga tushadi
-
-
-
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
@@ -182,18 +165,16 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 //     "endi damizni oling, foydasi yo'q endi!", // 60
 // ];
 
-
-
 // ASYNC / PROMISE
-// async function maslahatBering (a) {   
-//     if(typeof a !== 'number') throw new Error("insert a number from 0 to 5" , null); 
-//     else if(a <= 20) return list[0]; 
-    
+// async function maslahatBering (a) {
+//     if(typeof a !== 'number') throw new Error("insert a number from 0 to 5" , null);
+//     else if(a <= 20) return list[0];
+
 //     else if(a > 20 && a <= 30) return list[1];
 //     else if(a > 30 && a <= 40) return list[2];
 //     else if(a > 40 && a <= 50) return list[3];
 //     else if(a > 50 && a <= 60) return list[4];
-//     else { 
+//     else {
 //         return new Promise((resolve, reject) => { // Promise -ning kuchli tarafi, uni ichida setTimeOut ishlaydi
 //             setTimeout(() => {
 //                 resolve(list[5]);
@@ -203,7 +184,7 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 // }
 
 // async function run() {
-//     let javob = await maslahatBering(55); 
+//     let javob = await maslahatBering(55);
 //     console.log(javob);
 //     javob = await maslahatBering(66);
 //     console.log(javob);
@@ -212,12 +193,11 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 // }
 // run();
 
-
 // // CALLBACK / SETINTERVAL
 
-// function maslahatBering (a, callback) { 
-//     if(typeof a !== 'number') callback("insert a number from 0 to 5" , null); 
-//     else if(a < 20) callback(null, list[0]); 
+// function maslahatBering (a, callback) {
+//     if(typeof a !== 'number') callback("insert a number from 0 to 5" , null);
+//     else if(a < 20) callback(null, list[0]);
 //     else if(a > 20 && a <= 30) callback(null, list[1]);
 //     else if(a > 30 && a <= 40) callback(null, list[2]);
 //     else if(a > 40 && a <= 50) callback(null, list[3]);
@@ -230,7 +210,7 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 // }
 
 // console.log("[passed here 0");
-// maslahatBering(65, (err, data) => { 
+// maslahatBering(65, (err, data) => {
 //     if(err) console.log('ERROR:', err);
 //      else {console.log('javob:', data);
 //      }
@@ -238,20 +218,9 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 
 // console.log("[passed here 0");
 
-
-
-
-
-
-
-
-
-
-
-
 // console.log("Web Serverni Boshlash");
 // const express = require("express");
-// const app = express(); 
+// const app = express();
 // const http = require("http");
 // const fs = require("fs");
 
@@ -274,7 +243,6 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 // app.get("/train", (req, res) => {
 //     res.render("train", { user: user });
 // });
-
 
 // const server = http.createServer(app);
 // server.on("error", (err) => {

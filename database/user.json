@@ -1,16 +1,21 @@
 {
-    "name": "Mukhammaddiyor",
-    "profession": "Software & Media Engineer",
-    "age": 25,
-    "residence": "Uzbekistan",
-    "adress": "Gangwon, South Korea",
-    "language": ["Uzbek", "Korean", "English", "Russian"],
-    "skills": ["Html", "Css", "Js", "NodeJS", "Pyhton"],
-    "extra_skills": ["Bootstrap, Materialize", "Styling, sass", "Django", "Flask", "GIT Knowledge"],
-    "work_place": "IT Company, M&N IT Coorporation",
-    "service_desc": "I can describe you 6 years of experience and the work of my life! We focuse on quality rather than quantity",
-    "about_me": "25 years old married happy Man who lives in order to make his family happy and his parents proud!",
-    "city": "Andijan, Asaka city",
-    "title": ["Flower", "Seedlings", "Garden", "Old", "New"]
+  "name": "Mukhammaddiyor",
+  "profession": "Software & Media Engineer",
+  "age": 25,
+  "residence": "Uzbekistan",
+  "adress": "Gangwon, South Korea",
+  "language": ["Uzbek", "Korean", "English", "Russian"],
+  "skills": ["Html", "Css", "Js", "NodeJS", "Pyhton"],
+  "extra_skills": [
+    "Bootstrap, Materialize",
+    "Styling, sass",
+    "Django",
+    "Flask",
+    "GIT Knowledge"
+  ],
+  "work_place": "IT Company, M&N IT Coorporation",
+  "service_desc": "I can describe you 6 years of experience and the work of my life! We focuse on quality rather than quantity",
+  "about_me": "25 years old married happy Man who lives in order to make his family happy and his parents proud!",
+  "city": "Andijan, Asaka city",
+  "title": ["Flower", "Seedlings", "Garden", "Old", "New"]
 }
-
