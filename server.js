@@ -68,7 +68,7 @@ app.get("/author", (req, res) => {
 });
 
 app.get("/", function(req, res) {  // get - bizga database dan malumot o'qish uchun kerak bo'ladi
-    res.render("harid")
+    res.render("reja")
 });
 
 // render() - bu ejs file ni, html ga aylantirib userga yuboradi
@@ -83,5 +83,5 @@ app.get("/", function(req, res) {  // get - bizga database dan malumot o'qish uc
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function() {
-    console.log(`The server is running successfully on port: ${PORT}`);
+    console.log(`The server is running successfully on port: ${PORT}, http://localhost:${PORT}`);
 });

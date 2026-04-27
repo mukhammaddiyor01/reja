@@ -1,16 +1,32 @@
-// MITASK-A
+// MITASK-B
+const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,];
 
-function countLetter(a, b) {
+function countDigits(a) {
   let count = 0;
-  for (let i = 0; i < b.length; i++) {
-    if (b[i] == a) {
+  for (let i = 0; i < a.length; i++) {
+    if (num.includes(Number(a[i])) ) {
       count++;
     }
   }
   return count;
 }
 
-console.log(countLetter("e", "engineer"));
+console.log(countDigits("ad2a54y79wet0sfgb9"));
+
+
+// // MITASK-A
+
+// function countLetter(a, b) {
+//   let count = 0;
+//   for (let i = 0; i < b.length; i++) {
+//     if (b[i] == a) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(countLetter("e", "engineer"));
 
 
 
@@ -74,7 +90,10 @@ console.log(countLetter("e", "engineer"));
 // 2) asynchronous dasturlash: Promise functionlar
 // 3) Callback vs Asynchronous vs Promise
 
-
+// Definition           Call
+// calback        >       callback
+// async/await    >       then/catch ][ async/await
+// promise        >       then/catch ][ async/await
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
