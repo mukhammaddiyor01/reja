@@ -63,6 +63,7 @@ app.post("/create-item", (req, res) => {
   console.log(req.body);
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
+    res.json.opps(data.ops[0]);
     if (err) {
       console.log(err);
       res.end("Something went Wrong");
