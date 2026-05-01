@@ -9,21 +9,19 @@ class Shop {
     this.cola = cola;
   }
 
-
-
-qoldiq() {
+  qoldiq() {
   console.log(`Hozir ${moment().format('LT')}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`)
 }
 
   sotish(mahsulot, miqdor) {
     this[mahsulot] -= miqdor;
-    console.log(`Hozir ${moment().format('LT')}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`)
+    console.log(`Hozir ${moment().format('LT')}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola sotildi!`)
 
   }
 
   qabul(mahsulot, miqdor) {
     this[mahsulot] += miqdor;
-    console.log(`Hozir ${moment().format('LT')}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`)
+    console.log(`Hozir ${moment().format('LT')}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola qabul qilindi!`)
 
   }
 
