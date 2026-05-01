@@ -6,6 +6,8 @@ const fs = require("fs");
 
 // MongoDB Call
 const db = require("./server").db(); // bu orqali keyinchalik chaqirish, o'qish, o'chirish mumkin ekan
+const mongodb = require("mongodb");
+
 
 let user;
 fs.readFile("database/user.json", "utf8", (err, data) => {
@@ -72,6 +74,20 @@ app.post("/create-item", (req, res) => {
     }
   });
 });
+
+
+app.post("/delete-item", (req, res) => {
+  const id = req.body.id;
+  db.collection("plans").deleteOne({ _id: new mongodb.ObjectID(id) }, function (err, data) {
+    if (err) {
+      console.log(err);
+      res.end("Something went wrong");
+    } else {
+      res.json({ state: "Success" });
+    }
+  });
+});
+
 
 app.get("/", (req, res) => {
   console.log("user entered /");

@@ -1,17 +1,55 @@
-// MITASK-B
-const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// MITASK-C
+const moment = require('moment');
 
-function countDigits(a) {
-  let count = 0;
-  for (let i = 0; i < a.length; i++) {
-    if (num.includes(Number(a[i]))) {
-      count++;
-    }
+class Shop {
+  
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
   }
-  return count;
+
+
+
+qoldiq() {
+  console.log(`Hozir ${moment().format('LT')}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`)
 }
 
-console.log(countDigits("ad2a54y79wet0sfgb9"));
+  sotish(mahsulot, miqdor) {
+    this[mahsulot] -= miqdor;
+    console.log(`Hozir ${moment().format('LT')}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`)
+
+  }
+
+  qabul(mahsulot, miqdor) {
+    this[mahsulot] += miqdor;
+    console.log(`Hozir ${moment().format('LT')}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`)
+
+  }
+
+}
+const shop = new Shop(4, 5, 2)
+
+shop.qoldiq()
+shop.sotish("non", 3)
+shop.qabul("cola", 4)
+shop.qoldiq()
+
+
+// // MITASK-B
+// const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// function countDigits(a) {
+//   let count = 0;
+//   for (let i = 0; i < a.length; i++) {
+//     if (num.includes(Number(a[i]))) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(countDigits("ad2a54y79wet0sfgb9"));
 
 // // MITASK-A
 
@@ -218,38 +256,38 @@ console.log(countDigits("ad2a54y79wet0sfgb9"));
 
 // console.log("[passed here 0");
 
-// console.log("Web Serverni Boshlash");
-// const express = require("express");
-// const app = express();
-// const http = require("http");
-// const fs = require("fs");
+console.log("Web Serverni Boshlash");
+const express = require("express");
+const app = express();
+const http = require("http");
+const fs = require("fs");
 
-// let user;
-// fs.readFile("database/user.json", "utf8", (err, data) => {
-//     if (err) {
-//         console.log("ERROR", err);
-//     } else {
-//         user = JSON.parse(data);
-//     }
-// });
+let user;
+fs.readFile("database/user.json", "utf8", (err, data) => {
+    if (err) {
+        console.log("ERROR", err);
+    } else {
+        user = JSON.parse(data);
+    }
+});
 
-// app.use(express.static("public"));
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// app.set("views", "views");
-// app.set("view engine", "ejs");
+app.set("views", "views");
+app.set("view engine", "ejs");
 
-// app.get("/train", (req, res) => {
-//     res.render("train", { user: user });
-// });
+app.get("/train", (req, res) => {
+    res.render("train", { user: user });
+});
 
-// const server = http.createServer(app);
-// server.on("error", (err) => {
-//     console.log(`Server error: ${err.message}`);
-// });
+const server = http.createServer(app);
+server.on("error", (err) => {
+    console.log(`Server error: ${err.message}`);
+});
 
-// let PORT = process.env.PORT || 3000;
-// server.listen(PORT, function() {
-//     console.log(`The server is running successfully on port: ${PORT}`);
-// });
+let PORT = process.env.PORT || 3000;
+server.listen(PORT, function() {
+    console.log(`The server is running successfully on port: ${PORT}`);
+});
