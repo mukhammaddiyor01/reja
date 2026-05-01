@@ -25,17 +25,24 @@ let createField = document.getElementById("create-field");
 document.getElementById("create-form")
 .addEventListener("submit", function (e) {
   e.preventDefault();
+  const new_reja = createField.value.trim();
+
+  if (!new_reja) {
+    return;
+  }
 
   axios
     .post("/create-item", { reja: new_reja })
     .then((response) => {
-      console.log("/deleteirem")
+      document
         .getElementById("item-list")
-        .inserAdjacentHTML("beforeend", itemTemplate(response.data));
+        .insertAdjacentHTML("beforeend", itemTemplate(response.data));
       createField.value = "";
       createField.focus();
     })
-    .catch((err) => {});
+    .catch((err) => {
+      console.log("Please, try again!", err);
+    });
 });
 
 document.addEventListener("click", function (e) {
@@ -47,7 +54,7 @@ document.addEventListener("click", function (e) {
       axios.post("/delete-item", {id: e.target.getAttribute("data-id")})
       .then((respose) => {
         console.log(respose.data);
-        e.target.parentElement.parentElement.romove();
+        e.target.parentElement.parentElement.remove();
       })
       .catch((err) => {
         console.log("Please, Try Again!")
