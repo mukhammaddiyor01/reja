@@ -25,14 +25,14 @@ let createField = document.getElementById("create-field");
 document.getElementById("create-form")
 .addEventListener("submit", function (e) {
   e.preventDefault();
-  const new_reja = createField.value.trim();
+  // const new_reja = createField.value.trim();
 
-  if (!new_reja) {
-    return;
-  }
+  // if (!new_reja) {
+  //   return;
+  // }
 
   axios
-    .post("/create-item", { reja: new_reja })
+    .post("/create-item", { reja: createField.value })
     .then((response) => {
       document
         .getElementById("item-list")

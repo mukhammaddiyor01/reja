@@ -1,5 +1,6 @@
 // MITASK-C
 const moment = require('moment');
+const time = moment().format('LT');
 
 class Shop {
   
@@ -10,19 +11,17 @@ class Shop {
   }
 
   qoldiq() {
-  console.log(`Hozir ${moment().format('LT')}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`)
+  console.log(`Hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`)
 }
 
   sotish(mahsulot, miqdor) {
     this[mahsulot] -= miqdor;
-    console.log(`Hozir ${moment().format('LT')}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola sotildi!`)
-
+    console.log(`Hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola sotildi!`)
   }
 
   qabul(mahsulot, miqdor) {
     this[mahsulot] += miqdor;
-    console.log(`Hozir ${moment().format('LT')}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola qabul qilindi!`)
-
+    console.log(`Hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola qabul qilindi!`)
   }
 
 }
