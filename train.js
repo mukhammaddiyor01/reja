@@ -1,36 +1,61 @@
-// MITASK-C
-const moment = require('moment');
-const time = moment().format('LT');
+// MITASK - D
+function checkContent(item1, item2) {
+    let list1 = [];
+    let list2 = [];
 
-class Shop {
+    for (let i = 0; i < item1.length; i++) {
+        list1.push(item1[i]);
+    }
+
+    for (let i = 0; i < item2.length; i++) {
+        list2.push(item2[i]);
+    }
+
+    let sorted1 = list1.sort().join('');
+    let sorted2 = list2.sort().join('');
+
+    if (sorted1 === sorted2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(checkContent("mitgroup", "gmtiprou"));
+
+// // MITASK-C
+// const moment = require('moment');
+// const time = moment().format('LT');
+
+// class Shop {
   
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
 
-  qoldiq() {
-  console.log(`Hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`)
-}
+//   qoldiq() {
+//   console.log(`Hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`)
+// }
 
-  sotish(mahsulot, miqdor) {
-    this[mahsulot] -= miqdor;
-    console.log(`Hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola sotildi!`)
-  }
+//   sotish(mahsulot, miqdor) {
+//     this[mahsulot] -= miqdor;
+//     console.log(`Hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola sotildi!`)
+//   }
 
-  qabul(mahsulot, miqdor) {
-    this[mahsulot] += miqdor;
-    console.log(`Hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola qabul qilindi!`)
-  }
+//   qabul(mahsulot, miqdor) {
+//     this[mahsulot] += miqdor;
+//     console.log(`Hozir ${time}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola qabul qilindi!`)
+//   }
 
-}
-const shop = new Shop(4, 5, 2)
+// }
+// const shop = new Shop(4, 5, 2)
 
-shop.qoldiq()
-shop.sotish("non", 3)
-shop.qabul("cola", 4)
-shop.qoldiq()
+// shop.qoldiq()
+// shop.sotish("non", 3)
+// shop.qabul("cola", 4)
+// shop.qoldiq()
 
 
 // // MITASK-B
