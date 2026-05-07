@@ -1,27 +1,40 @@
-// MITASK - D
-function checkContent(item1, item2) {
-    let list1 = [];
-    let list2 = [];
+// MITASK - E
 
-    for (let i = 0; i < item1.length; i++) {
-        list1.push(item1[i]);
-    }
+function getReverse(a) {
+  let count = "";
 
-    for (let i = 0; i < item2.length; i++) {
-        list2.push(item2[i]);
-    }
+  for (let i = a.length - 1; i >= 0; i--) {
+    count += a[i];
+  }
 
-    let sorted1 = list1.sort().join('');
-    let sorted2 = list2.sort().join('');
-
-    if (sorted1 === sorted2) {
-        return true;
-    } else {
-        return false;
-    }
+  return count;
 }
 
-console.log(checkContent("mitgroup", "gmtiprou"));
+console.log(getReverse("hello")); // "olleh"
+// // MITASK - D
+// function checkContent(item1, item2) {
+//     let list1 = [];
+//     let list2 = [];
+
+//     for (let i = 0; i < item1.length; i++) {
+//         list1.push(item1[i]);
+//     }
+
+//     for (let i = 0; i < item2.length; i++) {
+//         list2.push(item2[i]);
+//     }
+
+//     let sorted1 = list1.sort().join('');
+//     let sorted2 = list2.sort().join('');
+
+//     if (sorted1 === sorted2) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(checkContent("mitgroup", "gmtiprou"));
 
 // // MITASK-C
 // const moment = require('moment');
