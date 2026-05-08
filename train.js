@@ -1,16 +1,27 @@
-// MITASK - E
-
-function getReverse(a) {
-  let count = "";
-
-  for (let i = a.length - 1; i >= 0; i--) {
-    count += a[i];
-  }
-
-  return count;
+// MITASK - F
+function findDoublers(str) {
+    for (let i = 0; i < str.length;  i++) {
+        if(str[i] === str[i + 1]) {
+            return true;
+    }
 }
+ return false;
+}
+console.log(findDoublers("hello"));
 
-console.log(getReverse("hello")); // "olleh"
+// // MITASK - E
+
+// function getReverse(a) {
+//   let count = "";
+
+//   for (let i = a.length - 1; i >= 0; i--) {
+//     count += a[i];
+//   }
+
+//   return count;
+// }
+
+// console.log(getReverse("hello")); // "olleh"
 // // MITASK - D
 // function checkContent(item1, item2) {
 //     let list1 = [];
