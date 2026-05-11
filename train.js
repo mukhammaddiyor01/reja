@@ -1,13 +1,32 @@
-// MITASK - F
-function findDoublers(str) {
-    for (let i = 0; i < str.length;  i++) {
-        if(str[i] === str[i + 1]) {
-            return true;
-    }
+// MITASK - G 
+
+
+function getHighestIndex(a) {
+    let maxValue = a[0];
+    let maxIndex = 0;
+
+    for (let i = 0; i < a.length; i++) {
+        if(a[i] >  maxValue ) {
+            maxValue = a[i];
+            maxIndex = i;
+        }
+    } 
+    return maxIndex;
 }
- return false;
-}
-console.log(findDoublers("hello"));
+console.log(getHighestIndex([5, 21, 12, 21, 8]))
+
+
+
+// // MITASK - F
+// function findDoublers(str) {
+//     for (let i = 0; i < str.length;  i++) {
+//         if(str[i] === str[i + 1]) {
+//             return true;
+//     }
+// }
+//  return false;
+// }
+// console.log(findDoublers("hello"));
 
 // // MITASK - E
 
