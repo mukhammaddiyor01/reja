@@ -1,19 +1,33 @@
-// MITASK - G 
+// MITASK - H
+function getPositive(arr) {
+   let result = "";
 
-
-function getHighestIndex(a) {
-    let maxValue = a[0];
-    let maxIndex = 0;
-
-    for (let i = 0; i < a.length; i++) {
-        if(a[i] >  maxValue ) {
-            maxValue = a[i];
-            maxIndex = i;
-        }
-    } 
-    return maxIndex;
+for (let i=0; i<arr.length; i++) {
+    if(arr[i] > 0) {
+       result = result + arr[i];
 }
-console.log(getHighestIndex([5, 21, 12, 21, 8]))
+}
+return result;
+}
+
+console.log(getPositive([1, -4, 2]))
+
+// // MITASK - G 
+
+
+// function getHighestIndex(a) {
+//     let maxValue = a[0];
+//     let maxIndex = 0;
+
+//     for (let i = 0; i < a.length; i++) {
+//         if(a[i] >  maxValue ) {
+//             maxValue = a[i];
+//             maxIndex = i;
+//         }
+//     } 
+//     return maxIndex;
+// }
+// console.log(getHighestIndex([5, 21, 12, 21, 8]))
 
 
 
