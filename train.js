@@ -1,19 +1,50 @@
-// MITASK - H
-function getPositive(arr) {
-   let result = "";
+// MITASK - I
+// Array ichida eng ko'p takrorlangan raqamni topib qaytarsin.
+// Masalan: majorityElement([1, 2, 3, 4, 5, 4, 3, 4]) return 4
 
-for (let i=0; i<arr.length; i++) {
-    if(arr[i] > 0) {
-       result = result + arr[i];
-}
-}
-return result;
-}
+function majorityElement(arr) {
+    let maxCount = 0;
+    let mostNumber = arr[0];
 
-console.log(getPositive([1, -4, 2]))
+    for (let i = 0; i < arr.length; i++) {
+        let count = 0;
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[i] === arr[j]) {
+                count++;
+            }
+        }
+        if (count > maxCount) {
+            maxCount = count;
+            mostNumber = arr[i];
+        }
+    }
+    return mostNumber;
+}
+console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
+
+// // MITASK - H
+// // Integerlardan iborat arrayni qabul qilib, faqatgina positive sonlarni olib string holatida return qilsin.
+
+// // Masalan: getPositive([1, -4, 2]) return "12"
+
+// function getPositive(arr) {
+//    let result = "";
+
+// for (let i=0; i<arr.length; i++) {
+//     if(arr[i] > 0) {
+//        result = result + arr[i];
+// }
+// }
+// return result;
+// }
+
+// console.log(getPositive([1, -4, 2]))
+
 
 // // MITASK - G 
+// Yagona parametrga ega function tuzing. Array tarkibidagi birinchi eng katta qiymatning indeksini qaytarsin.
 
+// Masalan: getHighestIndex([5, 21, 12, 21, 8]) return 1
 
 // function getHighestIndex(a) {
 //     let maxValue = a[0];
@@ -32,6 +63,11 @@ console.log(getPositive([1, -4, 2]))
 
 
 // // MITASK - F
+// Yagona string argumentga ega findDoublers nomli function tuzing. 
+// Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa true yokida false natija qaytarsin.
+
+// Masalan: findDoublers("hello") return true
+
 // function findDoublers(str) {
 //     for (let i = 0; i < str.length;  i++) {
 //         if(str[i] === str[i + 1]) {
@@ -42,8 +78,12 @@ console.log(getPositive([1, -4, 2]))
 // }
 // console.log(findDoublers("hello"));
 
-// // MITASK - E
 
+
+// // MITASK - E
+// Shunday function tuzing, u bitta string argumentini qabul qilib, qabul qilingan stringni teskari ko'rinishda return qilsin.
+
+// Masalan: getReverse("hello") return "olleh"
 // function getReverse(a) {
 //   let count = "";
 
@@ -55,7 +95,14 @@ console.log(getPositive([1, -4, 2]))
 // }
 
 // console.log(getReverse("hello")); // "olleh"
+
+
 // // MITASK - D
+// Ikkita parametra ega function tuzing, va functioning berilgan birinchi va ikkinchi parametr 
+// qiymatlari o'zaro to'liq mos kelsa true qiymat qaytarsin.
+
+// Masalan: checkContent("mitgroup", "gmtiprou") return true
+
 // function checkContent(item1, item2) {
 //     let list1 = [];
 //     let list2 = [];
@@ -80,7 +127,26 @@ console.log(getPositive([1, -4, 2]))
 
 // console.log(checkContent("mitgroup", "gmtiprou"));
 
+
 // // MITASK-C
+// Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.
+// Hamda classning quyidagdek 3'ta metodi bo'lsin:
+
+// 1) qoldiq
+// 2) sotish
+// 3) qabul
+
+// Har bir metod ishga tushgan vaqtda log qilinsin
+
+// MASALAN:
+// const shop = new Shop(4, 5, 2)
+
+// shop.qoldiq();
+// natija qaytishi kerak: Hozir 20: 40'da 4'ta non, 5'ta lag'mon va 2'ta cola mavjud
+
+// shop.sotish("non", 3); & shop.qabul("cola", 4); & shop.qoldiq();
+// Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!
+
 // const moment = require('moment');
 // const time = moment().format('LT');
 
@@ -116,6 +182,13 @@ console.log(getPositive([1, -4, 2]))
 
 
 // // MITASK-B
+
+// Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
+// string tarkibidagi sonlar miqdorini qaytarsin
+
+// Masalan: countDigits("ad2a54y79wet0sfgb9")
+// Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi
+
 // const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // function countDigits(a) {
@@ -131,6 +204,15 @@ console.log(getPositive([1, -4, 2]))
 // console.log(countDigits("ad2a54y79wet0sfgb9"));
 
 // // MITASK-A
+// MITASK-A
+
+// Harf sifatida kiritilgan birinchi parametr, 
+// kiritilgan ikkinchi parametr tarkibida nechta ekanligini qaytaruvchi
+// Funktsiya tuzing
+
+// Masalan: countLetter("e", "engineer")
+// 'engineer' so'zi tarkibida 'e' harfi 3 marotaba takrorlanganligi uchun
+// 3 sonini qaytaradi
 
 // function countLetter(a, b) {
 //   let count = 0;
