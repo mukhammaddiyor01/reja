@@ -1,26 +1,50 @@
-// MITASK - I
-// Array ichida eng ko'p takrorlangan raqamni topib qaytarsin.
-// Masalan: majorityElement([1, 2, 3, 4, 5, 4, 3, 4]) return 4
+// TASK J
 
-function majorityElement(arr) {
-    let maxCount = 0;
-    let mostNumber = arr[0];
+// String ichidagi eng uzun so'zni qaytarsin.
+// Masalan: findLongestWord("I came from Uzbekistan!") return "Uzbekistan!"
 
-    for (let i = 0; i < arr.length; i++) {
-        let count = 0;
-        for (let j = 0; j < arr.length; j++) {
-            if (arr[i] === arr[j]) {
-                count++;
-            }
-        }
-        if (count > maxCount) {
-            maxCount = count;
-            mostNumber = arr[i];
+function findLongestWord(text) {
+    let words = text.split(" ");
+    let longest = "";
+
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].length > longest.length) {
+            longest = words[i];
         }
     }
-    return mostNumber;
+
+    return longest;
 }
-console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
+
+console.log(findLongestWord("I came from Uzbekistan!"));
+
+
+
+
+
+// // MITASK - I
+// // Array ichida eng ko'p takrorlangan raqamni topib qaytarsin.
+// // Masalan: majorityElement([1, 2, 3, 4, 5, 4, 3, 4]) return 4
+
+// function majorityElement(arr) {
+//     let maxCount = 0;
+//     let mostNumber = arr[0];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         let count = 0;
+//         for (let j = 0; j < arr.length; j++) {
+//             if (arr[i] === arr[j]) {
+//                 count++;
+//             }
+//         }
+//         if (count > maxCount) {
+//             maxCount = count;
+//             mostNumber = arr[i];
+//         }
+//     }
+//     return mostNumber;
+// }
+// console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
 
 // // MITASK - H
 // // Integerlardan iborat arrayni qabul qilib, faqatgina positive sonlarni olib string holatida return qilsin.
